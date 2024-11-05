@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733313933883",
+    "project_id": "trading-17eb2",
+    "storage_bucket": "trading-17eb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733313933883:android:dd953c94ddaaf430eaf21e",
+        "android_client_info": {
+          "package_name": "com.example.appname"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlLXt3kIq9-qtVxdcQp9PqqI0iyiE9sxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
