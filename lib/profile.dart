@@ -41,7 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
-          title: Text('Errorss'),
+          title: Text('Errorssกก'),
           content: Text(withdrawAmount <= 0
               ? 'Please enter a valid amount.'
               : 'Insufficient balance.'),
