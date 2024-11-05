@@ -46,7 +46,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
   Future<void> _registerUser() async {
     final response = await http.post(
       Uri.parse(
-          'http://192.168.1.101/register.php '), // เปลี่ยน URL ตามเซิร์ฟเวอร์ของคุณ
+          'http://184.22.128.32/register.php '), // เปลี่ยน URL ตามเซิร์ฟเวอร์ของคุณ
       body: {
         'first_name': _firstNameController.text,
         'last_name': _lastNameController.text,

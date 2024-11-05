@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   Future<void> fetchUserData() async {
     final response = await http.get(Uri.parse(
-        'http://192.168.1.101/get_user_data.php?user=${widget.username}'));
+        'http://184.22.128.32/get_user_data.php?user=${widget.username}'));
     if (response.statusCode == 200) {
       try {
         setState(() {
@@ -58,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
     final newBalance = currentBalance - withdrawAmount;
 
     final response = await http.post(
-      Uri.parse('http://192.168.1.101/update_balance.php'),
+      Uri.parse('http://184.22.128.32/update_balance.php'),
       body: {
         'username': widget.username,
         'new_balance': newBalance.toString(),

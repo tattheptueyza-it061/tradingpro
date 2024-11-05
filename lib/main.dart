@@ -1,19 +1,23 @@
-
-
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:tradingcrypto/firebase_option.dart';
 import 'login.dart'; // ตรวจสอบให้แน่ใจว่าคุณนำเข้า LoginPage
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: firebaseOptions,
-  );
+  
+  // เริ่มต้น Firebase และจัดการข้อผิดพลาด
+  try {
+    await Firebase.initializeApp(
+      options: firebaseOptions,
+    );
+  } catch (e) {
+    print('Error initializing Firebase: $e');
+  }
 
-  runApp(MyApp(username: '',)); // เรียกใช้ MyApp โดยไม่ส่ง username
+  runApp(MyApp(username: '')); // เรียกใช้ MyApp โดยไม่ส่ง username
 }
-
 
 class MyApp extends StatelessWidget {
   final String username;
@@ -32,4 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

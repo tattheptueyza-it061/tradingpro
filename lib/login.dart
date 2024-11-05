@@ -43,7 +43,7 @@ Future<void> _login() async {
   } else {
     // ถ้าไม่ใช่ admin ให้ทำการส่งข้อมูลไปตรวจสอบที่ server
     final response = await http.post(
-      Uri.parse('http://192.168.1.101/login.php'),
+      Uri.parse('http://184.22.128.32/login.php'),
       body: {
         'username': _usernameController.text,
         'password': _passwordController.text,

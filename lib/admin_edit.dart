@@ -24,7 +24,7 @@ class _AdminEditPageState extends State<AdminEditPage> {
 
   Future<void> updateData(String field, String newValue) async {
     final response = await http.post(
-      Uri.parse('http://192.168.1.101/update_user_data.php'),
+      Uri.parse('http://184.22.128.32/update_user_data.php'),
       body: {
         'user': widget.userData['user'],
         'field': field,

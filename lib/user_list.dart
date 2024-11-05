@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:tradingcrypto/model/user_list_model.dart';
 import 'dart:convert';
 import 'admin_edit.dart'; // นำเข้าหน้า admin_edit ที่สร้างไว้
 
@@ -21,8 +22,7 @@ class _UserListPageState extends State<UserListPage> {
   }
 
 Future<void> fetchUserList() async {
-  final response = await http.get(Uri.parse('http://192.168.1.101/get_user_list.php'));
-
+  final response = await http.get(Uri.parse('http://184.22.128.32/get_user_list.php'));
 
   if (response.statusCode == 200) {
     try {
@@ -37,6 +37,25 @@ Future<void> fetchUserList() async {
   }
 }
 
+  // Future<void> fetchUserList() async {
+  //   final response = await http.get(Uri.parse(
+  //       'https://18ed-184-22-128-32.ngrok-free.app/get_user_list.php'));
+
+  //   if (response.statusCode == 200) {
+  //     try {
+  //       print('Response body: ${response.body}'); // แสดงข้อมูลที่ได้จาก API
+  //       List<dynamic> jsonList = json.decode(response.body);
+  //       setState(() {
+  //         List<User> userList = jsonList.map((json) => User.fromJson(json)).toList();
+
+  //       });
+  //     } catch (e) {
+  //       print('Error parsing user list: $e');
+  //     }
+  //   } else {
+  //     print('Failed to load user list. Status code: ${response.statusCode}');
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {

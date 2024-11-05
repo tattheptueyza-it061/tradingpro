@@ -37,6 +37,7 @@ dependencies:
   cloud_firestore: ^5.4.1 # หากคุณใช้ Cloud Firestore
   firebase_storage: ^12.3.0
   flutterfire_cli: ^1.0.0
+  firebase_database: ^11.1.4
 
 
   # The following adds the Cupertino Icons font to your application.
