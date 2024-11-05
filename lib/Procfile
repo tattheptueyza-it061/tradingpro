@@ -1,0 +1,1 @@
+web: flutter build web --release && cp -r build/web/* public/ && vendor/bin/heroku-php-nginx -C public/
