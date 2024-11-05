@@ -22,7 +22,7 @@ class _UserListPageState extends State<UserListPage> {
   }
 
 Future<void> fetchUserList() async {
-  final response = await http.get(Uri.parse('http://184.22.128.32/get_user_list.php'));
+  final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/todos/1'));
 
   if (response.statusCode == 200) {
     try {
