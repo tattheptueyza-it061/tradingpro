@@ -108,11 +108,11 @@ class _ProfilePageState extends State<ProfilePage> {
               padding: const EdgeInsets.all(16.0),
               child: ListView(
                 children: [
-                  Icon(
-                    Icons.account_circle, // แทนที่ด้วยไอคอนที่คุณต้องการ
-                    size: 100, // ขนาดของไอคอน
-                    color: Colors.yellow, // สีของไอคอน
-                  ),
+                  // Icon(
+                  //   Icons.account_circle, // แทนที่ด้วยไอคอนที่คุณต้องการ
+                  //   size: 100, // ขนาดของไอคอน
+                  //   color: Colors.yellow, // สีของไอคอน
+                  // ),
                   SizedBox(height: 20),
                   buildProfileItem(
                       'Username', userData['user'], Icons.account_circle),
